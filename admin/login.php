@@ -137,7 +137,7 @@ if(isset($_POST['save']))
 
 
                     <div class="input-field col s4">
-                        <input id="password" name="password" type="text"  class="validate">
+                        <input id="password" name="password" type="password"  class="validate">
                         <label for="password" class="">Password</label>
                     </div>
 
