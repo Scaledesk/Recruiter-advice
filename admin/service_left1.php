@@ -1,6 +1,16 @@
 <?php
 
 error_reporting (1);
+
+session_start();
+$user_check=$_SESSION['login_user'];
+
+if(!isset($user_check))
+{
+    header("Location: login.php");
+}
+
+
 require('connection.php');
 include_once('header.php');
 include_once('sidebar.php');
