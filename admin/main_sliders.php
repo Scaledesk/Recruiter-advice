@@ -1,4 +1,6 @@
 <?php
+
+error_reporting (1);
 require('connection.php');
 include_once('header.php');
 include_once('sidebar.php');

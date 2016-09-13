@@ -1,5 +1,6 @@
 ﻿<?php
-require('../RA-ADMIN/connection.php');
+error_reporting (1);
+require('connection.php');
 
 $data1="SELECT * FROM Service_head";
 
@@ -328,7 +329,7 @@ $r15=mysql_fetch_array($val15);
                                 <div class="default-two-column">
                                     <div class="row clearfix">
                                         <div class="text-column col-md-6 col-sm-6 col-xs-12">
-                                        	   <figure class="main-image"><img src="../RA-ADMIN/<?php echo $r11['service1_image_url'];?>" height='350' width='250'></figure>
+                                        	   <figure class="main-image"><img src="admin/<?php echo $r11['service1_image_url'];?>" height='350' width='250'></figure>
                                         </div>
                                         
                                         <div class="skills-column col-md-6 col-sm-6 col-xs-12">
@@ -371,7 +372,7 @@ $r15=mysql_fetch_array($val15);
                                 <div class="default-two-column">
                                     <div class="row clearfix">
                                         <div class="text-column col-md-6 col-sm-6 col-xs-12">
-                                               <figure class="main-image"><img src="../RA-ADMIN/<?php echo $r12['service2_image_url'];?>" height='350' width='250' alt=""></figure>
+                                               <figure class="main-image"><img src="admin/<?php echo $r12['service2_image_url'];?>" height='350' width='250' alt=""></figure>
                                         </div>
                                         
                                         <div class="skills-column col-md-6 col-sm-6 col-xs-12">
@@ -422,7 +423,7 @@ $r15=mysql_fetch_array($val15);
                                 <div class="default-two-column">
                                     <div class="row clearfix">
                                         <div class="text-column col-md-6 col-sm-6 col-xs-12">
-                                               <figure class="main-image"><img src="../RA-ADMIN/<?php echo $r13['service3_image_url'];?>" height='350' width='250' alt=""></figure>
+                                               <figure class="main-image"><img src="admin/<?php echo $r13['service3_image_url'];?>" height='350' width='250' alt=""></figure>
                                         </div>
                                         
                                         <div class="skills-column col-md-6 col-sm-6 col-xs-12">
@@ -459,7 +460,7 @@ $r15=mysql_fetch_array($val15);
                                 <div class="default-two-column">
                                     <div class="row clearfix">
                                         <div class="text-column col-md-6 col-sm-6 col-xs-12">
-                                               <figure class="main-image"><img src="../RA-ADMIN/<?php echo $r14['service4_image_url'];?>" height='350' width='250'alt=""></figure>
+                                               <figure class="main-image"><img src="admin/<?php echo $r14['service4_image_url'];?>" height='350' width='250'alt=""></figure>
                                         </div>
 
                                         <div class="skills-column col-md-6 col-sm-6 col-xs-12">
@@ -512,7 +513,7 @@ $r15=mysql_fetch_array($val15);
                                 <div class="default-two-column">
                                     <div class="row clearfix">
                                         <div class="text-column col-md-6 col-sm-6 col-xs-12">
-                                               <figure class="main-image"><img src="../RA-ADMIN/<?php echo $r15['service5_image_url'];?>" height='350' width='250' alt=""></figure>
+                                               <figure class="main-image"><img src="admin/<?php echo $r15['service5_image_url'];?>" height='350' width='250' alt=""></figure>
                                         </div>
                                         
 

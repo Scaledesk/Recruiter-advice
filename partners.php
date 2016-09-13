@@ -1,5 +1,7 @@
 ﻿<?php
-require('../RA-ADMIN/connection.php');
+
+error_reporting (1);
+require('connection.php');
 
 $data="SELECT * FROM Partners";
 
@@ -191,7 +193,7 @@ $r5=mysql_fetch_array($val5);
                while($r = mysql_fetch_array($val)){
                    ?>
                    <div class="col-md-4" style="margin-top: 20px;">
-                       <img src="../RA-ADMIN/<?php echo $r['part_image_url'];?>" height='150' width='200' alt="image">
+                       <img src="admin/<?php echo $r['part_image_url'];?>" height='150' width='200' alt="image">
                    </div>
 
                    <?php

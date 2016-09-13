@@ -1,5 +1,7 @@
 ﻿<?php
-require('../RA-ADMIN/connection.php');
+
+error_reporting (1);
+require('connection.php');
 
 $data="SELECT * FROM Events";
 
@@ -188,7 +190,7 @@ $r5=mysql_fetch_array($val5);
                             <h4>Date :<?php echo $r['Event_date'];?> </h4>
                             <p align="justify">
 
-                                <img src="../RA-ADMIN/<?php echo $r['Event_image_url'];?>" height="400" width="900">
+                                <img src="admin/<?php echo $r['Event_image_url'];?>" height="400" width="900">
 
                             </p>
 

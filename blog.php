@@ -1,5 +1,7 @@
 ﻿<?php
-require('../RA-ADMIN/connection.php');
+
+error_reporting (1);
+require('connection.php');
 
 $data="SELECT * FROM Blogs";
 
@@ -228,7 +230,7 @@ $r5=mysql_fetch_array($val5);
                             <h4>Date :<?php echo $r['Blog_time'];?> </h4>
                             <p align="justify">
 
-                                <img src="../RA-ADMIN/<?php echo $r['Blog_image_url'];?>" height="400" width="900">
+                                <img src="admin/<?php echo $r['Blog_image_url'];?>" height="400" width="900">
 
                             </p>
 

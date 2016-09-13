@@ -1,5 +1,7 @@
 ﻿<?php
-require('../RA-ADMIN/connection.php');
+
+error_reporting (1);
+require('connection.php');
 
 $data="SELECT * FROM About_us";
 
@@ -211,7 +213,7 @@ $r5=mysql_fetch_array($val5);
 
                  <article class="slide-item team-member">
                     <div class="inner-box">
-                        <figure class="image"><img src="../RA-ADMIN/<?php echo $r['image_url'];?>" height="400px;" width="500px;" alt=""></figure>
+                        <figure class="image"><img src="admin/<?php echo $r['image_url'];?>" height="400px;" width="500px;" alt=""></figure>
                         <div class="member-info">
                             <h3><?php echo $r['image_caption'];?></h3>
                             

@@ -1,5 +1,7 @@
 ﻿<?php
-require('../RA-ADMIN/connection.php');
+
+error_reporting (1);
+require('connection.php');
 
 $data1="SELECT * FROM Testimonials";
 
@@ -187,7 +189,7 @@ $r5=mysql_fetch_array($val5);
                    
                     <li class="gradient-overlay" data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/1.png" data-saveperformance="off" >
 <!--                    <img src="images\main-slider\1.png" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"> -->
-                    <img src="../RA-ADMIN/<?php echo $r3['image_url'];?>" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                    <img src="admin/<?php echo $r3['image_url'];?>" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
                     
 <!--                    -->
@@ -284,7 +286,7 @@ $r5=mysql_fetch_array($val5);
                             ?>
 
                             <div class="column col-md-4 col-sm-12 col-xs-12">
-                                <img  src="../RA-ADMIN/<?php echo $r2['image_url'];?>" height='150' width='150' alt="image">
+                                <img  src="admin/<?php echo $r2['image_url'];?>" height='150' width='150' alt="image">
                                 <div>
 
                             <span style="margin-left: 30px;">
@@ -356,7 +358,7 @@ $r5=mysql_fetch_array($val5);
                         <p>“<?php echo $r1['content'];?>”</p>
                     </div>
                     <div class="info-box">
-                        <figure class="image-box"><img src="../RA-ADMIN/<?php echo $r1['user_image_url'];?>" alt=""></figure>
+                        <figure class="image-box"><img src="admin/<?php echo $r1['user_image_url'];?>" alt=""></figure>
 <!--                        <figure class="image-box"><img src="../RA-ADMIN/upload/CARD.png" alt=""></figure>-->
 
                         <h3><?php echo $r1['user_name']; ?></h3>

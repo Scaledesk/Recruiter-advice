@@ -1,4 +1,5 @@
 ﻿<?php
+error_reporting (1);
 include_once('header.php');
 include_once('sidebar.php');
 ?>

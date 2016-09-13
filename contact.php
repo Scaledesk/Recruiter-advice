@@ -1,5 +1,6 @@
 ﻿<?php
-require('../RA-ADMIN/connection.php');
+error_reporting (1);
+require('connection.php');
 
 $data="SELECT * FROM Contact_us";
 
