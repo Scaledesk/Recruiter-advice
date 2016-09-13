@@ -15,7 +15,7 @@ if(isset($_POST['save']))
 
     if($ddd<1)
     {
-        $error="Your Login Name or Password is invalid";
+        $error="Your user name or Password is invalid";
     }
     else{
 
@@ -29,12 +29,14 @@ if(isset($_POST['save']))
 
 ?>
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
     <!-- Title -->
-    <title>Admin Panel| Recruiter's Advice</title>
+    <title>Admin Panel | Recruiter's Advice</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta charset="UTF-8">
@@ -53,12 +55,15 @@ if(isset($_POST['save']))
     <link href="assets\css\custom.css" rel="stylesheet" type="text/css">
 
 
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
     <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
 </head>
-<body>
+<body class="signin-page">
 <div class="loader-bg"></div>
 <div class="loader">
     <div class="preloader-wrapper big active">
@@ -71,7 +76,7 @@ if(isset($_POST['save']))
                 <div class="circle"></div>
             </div>
         </div>
-        <div class="spinner-layer spinner-spinner-teal lighten-1">
+        <div class="spinner-layer spinner-red">
             <div class="circle-clipper left">
                 <div class="circle"></div>
             </div><div class="gap-patch">
@@ -100,105 +105,49 @@ if(isset($_POST['save']))
         </div>
     </div>
 </div>
-<div class="mn-content fixed-sidebar">
-    <header class="mn-header navbar-fixed">
-
-        <nav class="cyan darken-1">
-            <div class="nav-wrapper row">
-
-            </div>
-        </nav>
-    </header>
-
-    
-    <main class="mn-inner">
-
-        <span style="font-size: 30px;">Admin Login</span>
-
-
-        <form  action="login.php" method="post"  >
+<div class="mn-content valign-wrapper">
+    <main class="mn-inner container">
+        <div class="valign">
             <div class="row">
-                <div class="col s12" align="center">
+                <div class="col s12 m6 l4 offset-l4 offset-m3">
+                    <div class="card white darken-1">
+                        <div class="card-content ">
+                            <span class="card-title">Admin Login</span>
 
-                    <div class="input-field col s4"  ></div>
 
-                    <div class="input-field col s4">
+                            <div class="row">
+                                <form action="login.php" method="post" class="col s12">
+                                    <div class="input-field col s12">
+                                        <input id="username" name="username" type="text" class="validate">
+                                        <label for="username">User name</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <input id="password" name="password" type="password" class="validate">
+                                        <label for="password">Password</label>
+                                    </div>
+                                    <div class="col s12 right-align m-t-sm">
 
-                        <input id="username" name="username" type="text"  class="validate">
-                        <label for="username" class="">Username</label>
+                                        <button name="save" type="submit" class="waves-effect waves-light btn teal">Login</button>
+                                    </div>
 
+
+
+                                    <div class="col s12 right-align m-t-sm"  ><p style="color: red">
+                                                                <?php
+                                                                echo $error;
+                                                                ?>
+
+                                                            </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                    <div class="input-field col s4"  ></div>
-                    </div>
-
-                <div class="col s12" align="center">
-
-                    <div class="input-field col s4"  ></div>
-
-
-                    <div class="input-field col s4">
-                        <input id="password" name="password" type="password"  class="validate">
-                        <label for="password" class="">Password</label>
-                    </div>
-
-                    <div class="input-field col s4"  ></div>
-
-                    </div>
-
-                <div class="col s12" align="center">
-                    <div class="input-field col s4"  ></div>
-
-                    <div class="col s4">
-                        <button class="waves-effect waves-light btn indigo m-b-xs" name="save" type="submit"><b style="font-size:25px;">lOGIN</b></button>
-                    </div>
-                    <div class="input-field col s4"  ></div>
                 </div>
-
             </div>
-
-
-
-        </form>
+        </div>
     </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div>
-<div class="left-sidebar-hover"></div>
 
 <!-- Javascripts -->
 <script src="assets\plugins\jquery\jquery-2.2.0.min.js"></script>
@@ -206,8 +155,6 @@ if(isset($_POST['save']))
 <script src="assets\plugins\material-preloader\js\materialPreloader.min.js"></script>
 <script src="assets\plugins\jquery-blockui\jquery.blockui.js"></script>
 <script src="assets\js\alpha.min.js"></script>
-<script src="assets\js\pages\form_elements.js"></script>
-
 
 </body>
 </html>

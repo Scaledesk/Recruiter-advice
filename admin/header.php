@@ -71,12 +71,16 @@
 </div>
 <div class="mn-content fixed-sidebar">
     <header class="mn-header navbar-fixed">
-
         <nav class="cyan darken-1">
             <div class="nav-wrapper row">
                 <form method="post" action="logout.php">
-                    <button style="margin-left: 30px;" name="logout" id="logout" type="submit"  class="waves-effect waves-light btn red m-b-xs" >logout</button>
+                    <div class="row">
+                        <div>
+                            <button style="margin-left: 30px; text-align:right;" name="logout" id="logout" type="submit"  class="waves-effect waves-light btn red m-b-xs" >logout</button>
 
+                        </div>
+
+                    </div>
 
                 </form>
 

@@ -1,6 +1,6 @@
 ﻿<?php
 error_reporting (1);
-include('connection.php');
+require('connection.php');
 
 session_start();
 $user_check=$_SESSION['login_user'];
@@ -11,13 +11,11 @@ if(!isset($user_check))
 }
 
 
-
 include_once('header.php');
 include_once('sidebar.php');
 ?>
-           
-           
-            <main class="mn-inner">
+
+<main class="mn-inner">
                 <div class="row">
                     <div class="col s12" align="center">
                         <div class="page-title" >Welcome to Recruiter's Advice Admin Panel. Click on the pages from the left bar to add/delete content.</div>
