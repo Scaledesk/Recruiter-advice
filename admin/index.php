@@ -3,7 +3,7 @@ error_reporting (1);
 require('connection.php');
 
 session_start();
-$user_check=$_SESSION['login_user'];
+$user_check=$_SESSION['login_user1'];
 
 if(!isset($user_check))
 {

@@ -112,7 +112,7 @@
 
 
 
-            <li class="no-padding"><a class="waves-effect waves-grey" href="index.php"><i class="material-icons">apps</i>Charts</a></li>
+            <li class="no-padding"><a class="waves-effect waves-grey" href="main_sliders.php"><i class="material-icons">apps</i>Charts</a></li>
 
             </li></ul>
 

@@ -22,7 +22,7 @@ if(isset($_POST['save']))
 //        session_register("myusername");
         $_SESSION['login_user']=$myusername;
 
-        header("location:index.php");
+        header("location:main_sliders.php");
     }
 
 }
